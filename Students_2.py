@@ -7,14 +7,14 @@ students = [
     ('Oleg',90)
 ]
 
-my_dict_students = []
+my_dict_students = {}
 
 def My_Func(my_dict_students) :
     for num1, num2 in students :
         if num2 not in my_dict_students :
             my_dict_students[num2] = []
-        else:
-            my_dict_students.append(num1)
+
+        my_dict_students[num2].append(num1)
 
     print(my_dict_students)
 
